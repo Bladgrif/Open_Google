@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
@@ -20,4 +21,5 @@ public class Open_Google {
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("https://ru.selenide.org"));
     }
+
 }
